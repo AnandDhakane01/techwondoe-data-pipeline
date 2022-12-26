@@ -30,7 +30,7 @@ export const checkApiKey = async (
 export const generateAPIKey = async (next: NextFunction) => {
   const apiKey = crypto.randomBytes(32).toString("hex");
   try {
-    AppDataSource.createQueryBuilder()
+    await AppDataSource.createQueryBuilder()
       .insert()
       .into(ApiKeys)
       .values({ key: apiKey })

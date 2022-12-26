@@ -20,4 +20,4 @@ const registerController = async (req: Request, res: Response) => {
   res.status(200).json({ message: "Data inserted successfully!" });
 };
 
-export = registerController;
+export default registerController;

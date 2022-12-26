@@ -2,3 +2,5 @@ node_modules
 dist
 todos
 .env
+lambdacode
+.dev.env
